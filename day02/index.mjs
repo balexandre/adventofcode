@@ -65,7 +65,7 @@ const getRoundTotalPart1 = (player1move, player2move) => {
   return total;
 }
 
-const getOutputPart2 = (fileName, getRoundTotalFn) => {
+export const getOutputPart2 = (fileName, getRoundTotalFn) => {
   const inputs = readFile(fileName);
   const totals = [];
 
@@ -78,9 +78,10 @@ const getOutputPart2 = (fileName, getRoundTotalFn) => {
     //console.log({ player1move, player2move, total });
   });
   const totalGame = totals.reduce((prev, input) => prev + input);
-  console.log({ totalGame })
+  console.log({ totalGame });
+  return totalGame;
 }
-const getOutputPart1 = (fileName) => {
+export const getOutputPart1 = (fileName) => {
   const inputs = readFile(fileName);
   const totals = [];
 
@@ -93,9 +94,9 @@ const getOutputPart1 = (fileName) => {
     //console.log({ player1move, player2move, total });
   });
   const totalGame = totals.reduce((prev, input) => prev + input);
-  console.log({ totalGame })
+  console.log({ totalGame });
+  return totalGame;
 }
-
 
 getOutputPart1("./day02/input.txt");
 getOutputPart2("./day02/input.txt");

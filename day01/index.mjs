@@ -5,7 +5,7 @@ const readFile = (filePath) => {
   return contents.trim().split('\n');
 }
 
-const getOutput = (fileName) => {
+export const getOutput = (fileName) => {
   const inputs = readFile(fileName);
   let mainTotals = 0;
   let elfTotal = 0;
@@ -27,8 +27,10 @@ const getOutput = (fileName) => {
   // part 2: 69836, 69796, 68336
   const topThreeElfs = [elfsTotals[0], elfsTotals[1], elfsTotals[2]];
   const topThreeElfsTotal = topThreeElfs.reduce((prev, input) => prev += input);
-
-  console.log({ mainTotals, topThreeElfs, topThreeElfsTotal, elfsTotals: elfsTotals.sort((a, b) => b - a)});
+  const result = { mainTotals, topThreeElfs, topThreeElfsTotal, elfsTotals };
+  
+  console.log(result);
+  return result;
 }
 
 getOutput("./day01/input.txt");

@@ -1,0 +1,6 @@
+# check url below for more info
+# https://github.com/mochajs/mocha/blob/master/example/config/.mocharc.yml
+require: 'mocha-suppress-logs'
+exit: true
+spec:
+  - './**/*.spec.mjs'

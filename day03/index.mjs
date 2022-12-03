@@ -39,7 +39,7 @@ const getPriority = (duplicate) => {
 	//console.log({ rucksack, firstCompartment, secondCompartment, duplicate, priorityInt, a: 'a'.charCodeAt(0), z: 'z'.charCodeAt(0), AA: 'A'.charCodeAt(0), ZZ: 'Z'.charCodeAt(0), priority });
 }
 
-const getOutputPart1 = (fileName) => {
+export const getOutputPart1 = (fileName) => {
 	const inputs = readFile(fileName);
 	let total = 0;
 	inputs.forEach(rucksack => {
@@ -51,9 +51,10 @@ const getOutputPart1 = (fileName) => {
 		total += priority;
 	});
 	console.log({ total });
+	return total;
 }
 
-const getOutputPart2 = (fileName) => {
+export const getOutputPart2 = (fileName) => {
 	const inputs = readFile(fileName);
 	let total = 0;
 	for (let a = 0; a < inputs.length; a += 3) {
@@ -68,6 +69,7 @@ const getOutputPart2 = (fileName) => {
 		total += priority;
 	}
 	console.log({ total });
+	return total;
 }
 
 getOutputPart1("./day03/input.txt");
