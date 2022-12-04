@@ -3,4 +3,4 @@
 require: 'mocha-suppress-logs'
 exit: true
 spec:
-  - './**/*.spec.mjs'
+  - './**/**/*.spec.mjs'
