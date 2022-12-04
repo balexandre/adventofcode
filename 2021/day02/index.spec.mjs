@@ -8,7 +8,7 @@ describe('Advent 2021, day 2', () => {
 		const result = getOutputPart1(fileName);
 
 		it('should work', () => {
-			expect(result).to.equal(0);
+			expect(result).to.equal(1694130);
 		});
 	});
 
@@ -16,7 +16,7 @@ describe('Advent 2021, day 2', () => {
 		const result = getOutputPart2(fileName);
 
 		it('should work', () => {
-			expect(result).to.equal(0);
+			expect(result).to.equal(1698850445);
 		});
 	});
 });
