@@ -20,7 +20,8 @@ for (let year = yearStart; year <= yearEnd; year++) {
 		if (!fs.existsSync(`${dayPath}/input.txt`)) 
 			fs.writeFileSync(`${dayPath}/input.txt`, '', 'utf8');
 		if (!fs.existsSync(`${dayPath}/index.mjs`)) 
-			fs.writeFileSync(`${dayPath}/index.mjs`, `import { readFileSync } from 'fs'
+			fs.writeFileSync(`${dayPath}/index.mjs`, `// https://adventofcode.com/${year}/day/${day}
+import { readFileSync } from 'fs'
 
 const readFile = (filePath) => {
 	const contents = readFileSync(filePath, 'utf-8');

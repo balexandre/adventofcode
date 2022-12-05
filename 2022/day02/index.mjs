@@ -78,9 +78,10 @@ export const getOutputPart2 = (fileName) => {
     //console.log({ player1move, player2move, total });
   });
   const totalGame = totals.reduce((prev, input) => prev + input);
-  console.log({ totalGame });
+  // console.log({ totalGame });
   return totalGame;
 }
+
 export const getOutputPart1 = (fileName) => {
   const inputs = readFile(fileName);
   const totals = [];
@@ -94,9 +95,9 @@ export const getOutputPart1 = (fileName) => {
     //console.log({ player1move, player2move, total });
   });
   const totalGame = totals.reduce((prev, input) => prev + input);
-  console.log({ totalGame });
+  // console.log({ totalGame });
   return totalGame;
 }
 
-// getOutputPart1("./2022/day02/input.txt");
-// getOutputPart2("./2022/day02/input.txt");
+getOutputPart1("./2022/day02/input.txt");
+getOutputPart2("./2022/day02/input.txt");

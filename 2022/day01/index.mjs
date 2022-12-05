@@ -29,7 +29,7 @@ export const getOutput = (fileName) => {
   const topThreeElfsTotal = topThreeElfs.reduce((prev, input) => prev += input);
   const result = { mainTotals, topThreeElfs, topThreeElfsTotal, elfsTotals };
   
-  console.log(result);
+  // console.log(result);
   return result;
 }
 

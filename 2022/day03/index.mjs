@@ -50,7 +50,7 @@ export const getOutputPart1 = (fileName) => {
 		const priority = getPriority(duplicate);
 		total += priority;
 	});
-	console.log({ total });
+	// console.log({ total });
 	return total;
 }
 
@@ -68,9 +68,9 @@ export const getOutputPart2 = (fileName) => {
 		//console.log({ rucksack1, rucksack2, rucksack3, duplicate, priority });
 		total += priority;
 	}
-	console.log({ total });
+	// console.log({ total });
 	return total;
 }
 
-// getOutputPart1("./2022/day03/input.txt");
-// getOutputPart2("./2022/day03/input.txt");
+getOutputPart1("./2022/day03/input.txt");
+getOutputPart2("./2022/day03/input.txt");

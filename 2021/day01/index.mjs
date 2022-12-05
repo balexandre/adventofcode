@@ -12,7 +12,7 @@ export const getOutputPart1 = (fileName) => {
     result += Number(prev) < Number(input) ? 1 : 0;
     return input;
   });
-  console.log({ result });
+  // console.log({ result });
   return result;
 }
 
@@ -73,7 +73,7 @@ export const getOutputPart2 = (fileName) => {
   for (let i = 1; i < sums.length; i++) {
     result += sums[i - 1] < sums[i] ? 1 : 0;
   }
-  console.log({ result });
+  // console.log({ result });
   return result;
 }
 

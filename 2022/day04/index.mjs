@@ -48,7 +48,7 @@ export const getOutputPart1 = (fileName) => {
 		containPairs += hasFullyContainAssignments(input) ? 1 : 0;
 	});
 	
-	console.log({ containPairs });
+	// ({ containPairs });
 	return containPairs;
 };
 
@@ -61,9 +61,9 @@ export const getOutputPart2 = (fileName) => {
 		containPairs += hasPartiallyContainAssignments(input) ? 1 : 0;
 	});
 	
-	console.log({ containPairs });
+	// console.log({ containPairs });
 	return containPairs;
 };
 
-// getOutputPart1("./2022/day04/input.txt");
-// getOutputPart2("./2022/day04/input.txt");
+getOutputPart1("./2022/day04/input.txt");
+getOutputPart2("./2022/day04/input.txt");

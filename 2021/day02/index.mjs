@@ -15,18 +15,17 @@ export const getOutputPart1 = (fileName) => {
     const [movement, units] = input.split(' ');
     const position = Number(units);
 
-
     if (movement === 'forward') HORIZONTAL += position;
     else if (movement === 'up') DEPTH -= position;
     else if (movement === 'down') DEPTH += position;
     else {
       throw new Error(movement)
     }
-    console.log({movement, position, HORIZONTAL, DEPTH});
+    // console.log({movement, position, HORIZONTAL, DEPTH});
   });
 
   const result = HORIZONTAL * DEPTH;
-  console.log({ HORIZONTAL, DEPTH, result });
+  // console.log({ HORIZONTAL, DEPTH, result });
   return result;
 }
 
@@ -55,9 +54,9 @@ export const getOutputPart2 = (fileName) => {
   });
 
   const result = HORIZONTAL * DEPTH;
-  console.log({ HORIZONTAL, DEPTH, AIM, result });
+  // console.log({ HORIZONTAL, DEPTH, AIM, result });
   return result;
 }
 
-// getOutputPart1("./2021/day02/input.txt");
-// getOutputPart2("./2021/day02/input.txt");
+getOutputPart1("./2021/day02/input.txt");
+getOutputPart2("./2021/day02/input.txt");
