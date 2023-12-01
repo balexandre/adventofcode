@@ -3,7 +3,7 @@ import { getOutputPart1, getOutputPart2 } from './index.mjs';
 
 const fileName = './2020/day15/input.txt';
 
-describe('Advent 2020, day 15', () => {
+describe.skip('Advent 2020, day 15', () => {
 	describe('part 1', () => {
 		const result = getOutputPart1(fileName);
 

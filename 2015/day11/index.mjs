@@ -1,3 +1,4 @@
+// https://adventofcode.com/2015/day/11
 import { readFileSync } from 'fs'
 
 const readFile = (filePath) => {
