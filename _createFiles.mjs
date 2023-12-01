@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 const yearStart = 2015;
-const yearEnd = 2022;
+const yearEnd = 2023;
 
 for (let year = yearStart; year <= yearEnd; year++) {
 	let filePath = `./${year.toString()}`;
@@ -53,7 +53,7 @@ import { getOutputPart1, getOutputPart2 } from './index.mjs';
 
 const fileName = '${dayPath}/input.txt';
 
-describe('Advent ${year}, day ${day}', () => {
+describe.skip('Advent ${year}, day ${day}', () => {
 	describe('part 1', () => {
 		const result = getOutputPart1(fileName);
 
