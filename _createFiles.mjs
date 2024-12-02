@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-const yearStart = 2015;
-const yearEnd = 2023;
+const yearStart = 2024;
+const yearEnd = 2024;
 
 for (let year = yearStart; year <= yearEnd; year++) {
 	let filePath = `./${year.toString()}`;
